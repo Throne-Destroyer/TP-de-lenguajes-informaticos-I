@@ -1,0 +1,234 @@
+/* Variables */
+
+:root {
+    --color-primario: #ffed47;
+    --color-secundario: #7de0bf;
+    --color-acento: #42ccee;
+    --color-fondo: #a3a0d4;
+    --color-texto: #120404;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*body*/
+body {
+    background-color: var(--color-fondo);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 0 1rem;
+}
+
+/* Header */
+header {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Tipografía */
+h1 {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: var(--color-texto);
+    font-family: Georgia, serif;
+    font-size: 24px;
+    display: inline-block;
+    background-color: var(--color-acento);
+    padding: 0px 10px;
+}
+
+h3 {
+    color: var(--color-texto);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    background-color: var(--color-acento);
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+h4 {
+    color: var(--color-texto);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    background-color: var(--color-secundario);
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+
+p {
+    font-size: 16px;
+    margin: 1em;
+    color: var(--color-texto);
+}
+
+/* Bootstrap - personalizaciones */
+/* Navegación */
+
+.navbar {
+    background-color: var(--color-acento);
+}
+
+.navbar .nav-link {
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    padding: 10px 15px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-secundario);
+    background-color: var(--color-texto);
+}
+
+.navbar .navbar-brand {
+    color: var(--color-texto);
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--color-texto);
+}
+
+/* Contenido */
+main {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 20px;
+    background-color: var(--color-secundario);
+}
+
+section {
+    margin: 20px 0;
+}
+
+dt {
+
+    text-decoration: none;
+    background-color: var(--color-acento);
+    max-width: 300px;
+    padding: 0px 10px;
+
+}
+
+#titulo-primario {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.destacado1 {
+    color: var(--color-secundario);
+    text-decoration: underline;
+    padding: 50px;
+}
+
+/* Flexbox */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.servicio-item {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+.titulo-atractivo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* Cards */
+.tarjeta-atractivo {
+    position: relative;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border: 6px solid var(--color-secundario);
+    border-radius: 8px;
+}
+
+.tarjeta-atractivo p {
+    color: var(--color-texto);
+}
+
+.tarjeta-atractivo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-acento);
+    border-radius: 50%;
+}
+
+/* Formulario. Por ahora sin uso*/
+input {
+    padding: 0.5rem;
+    border: 1px solid var(--color-secundario);
+    width: 100%;
+}
+
+textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--color-secundario);
+    width: 100%;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 5px solid var(--color-secundario);
+}
+
+.imagen-atractivo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagen-vertical {
+    height: auto;
+    object-fit: initial;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
