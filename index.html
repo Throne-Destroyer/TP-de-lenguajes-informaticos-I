@@ -1,29 +1,30 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilos.css">
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/estilos.css" />
     <title>Arbakelios</title>
   </head>
 
-
-  
   <body>
     <header>
       <div>
         <img
           src="Multimedia/Images/Arbakelios_logo_2.png"
           alt="Logo: Logotipo de Arbakelios"
-          height="350">
+          height="350"
+        />
       </div>
 
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -65,14 +66,15 @@
     <main>
       <section id="inicio">
         <h1>Arbakelios, la ciudad de los deseos</h1>
-        <article>
-          <h2>Bienvenidos a Arbakelios</h2>
+        <h2>Bienvenidos a Arbakelios</h2>
+        <article class="inicio-contenido">
           <div>
             <!--imagen de contenido principal-->
             <img
               src="Multimedia/Images/flying_city_Arbakelios_a.png"
               alt="Vista panorámica de Arbakelios, una ciudad flotante sobre el Velian"
-              height="900">
+              height="900"
+            />
           </div>
           <div>
             <!--contenido principal-->
@@ -140,8 +142,6 @@
       </section>
       <section id="ciudad">
         <h2>Conocé la ciudad</h2>
-        <div></div>
-        <div></div>
         <h3>Historia</h3>
         <p>
           Arbakelios fue fundada por Arioch el Sentinela, inicialmente con el
@@ -162,7 +162,6 @@
         </p>
 
         <h3>Barrios y zonas</h3>
-        <div></div>
         <h4>Distrito del Puerto</h4>
         <p>
           Es el principal punto de entrada y salida de la ciudad. Sus
@@ -206,14 +205,30 @@
 
           <dt>Gentilicio</dt>
           <dd>Arbakeliano / Arbakeliana.</dd>
+          <dt>Población</dt>
+          <dd>300.000 habitantes</dd>
+
+          <dt>Año de fundación</dt>
+          <dd>2651 del calendario Varialdeno</dd>
+
+          <dt>Clima</dt>
+          <dd>Templado</dd>
+
+          <dt>Costumbres</dt>
+          <dd>
+            Arbakelios celebra varias ferias de ciencia y arte, temporadas
+            deportivas y recreaciones históricas y culturales. La celebración
+            más importante es Breilass, una festividad dedicada a la comunidad,
+            la familia y el honor durante los tiempos difíciles del invierno.
+          </dd>
         </dl>
       </section>
       <section id="lugares">
         <h2>Principales atractivos</h2>
 
-        <div class="container">
+        <div class="container-fluid">
           <div class="row g-4 servicios">
-            <div class="col-12 col-md-6 col-lg-4 servicio-item">
+            <div class="col-12 col-md-6 col-lg-4">
               <article class="tarjeta-atractivo h-100">
                 <div class="titulo-atractivo">
                   <h3>El Núcleo Central</h3>
@@ -222,12 +237,14 @@
                 <img
                   class="imagen-atractivo imagen-vertical"
                   src="Multimedia/Images/nucleo_2a.png"
-                  alt="Vista exterior del Núcleo Central">
+                  alt="Vista exterior del Núcleo Central"
+                />
                 <div class="imagen-con-etiqueta">
                   <img
                     class="imagen-atractivo"
                     src="Multimedia/Images/nucleo_central_1.png"
-                    alt="Vista interior del Núcleo Central">
+                    alt="Vista interior del Núcleo Central"
+                  />
                 </div>
                 <p>
                   El corazón administrativo y tecnológico de Arbakelios. Una
@@ -250,7 +267,7 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 servicio-item">
+            <div class="col-12 col-md-6 col-lg-4">
               <article class="tarjeta-atractivo h-100">
                 <div class="titulo-atractivo">
                   <h3>Los Jardines Suspendidos</h3>
@@ -260,7 +277,8 @@
                   class="imagen-atractivo imagen-vertical"
                   src="Multimedia/Images/Jardines.jpg"
                   alt="Espacios verdes de los Jardines Suspendidos"
-                  height="800">
+                  height="800"
+                />
                 <p>
                   Un extenso conjunto de parques, jardines y espacios
                   recreativos distribuidos entre las plataformas superiores de
@@ -279,7 +297,7 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 servicio-item">
+            <div class="col-12 col-md-6 col-lg-4">
               <article class="tarjeta-atractivo h-100">
                 <div class="titulo-atractivo">
                   <h3>El Coliseo</h3>
@@ -289,12 +307,14 @@
                   class="imagen-atractivo"
                   src="Multimedia/Images/Coliseo_1.jpg"
                   alt="Vista del Coliseo de Arbakelios"
-                  height="500">
+                  height="500"
+                />
                 <img
                   class="imagen-atractivo"
                   src="Multimedia/Images/coliseo_2a.png"
                   alt="Escenas de deportes en el coliseo de Arbakelios"
-                  height="600">
+                  height="600"
+                />
                 <p>
                   Un espacio dedicado a eventos deportivos, competencias y
                   espectáculos. Su arquitectura combina elementos clásicos con
@@ -341,6 +361,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-
   </body>
 </html>

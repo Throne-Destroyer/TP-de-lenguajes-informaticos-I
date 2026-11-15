@@ -15,25 +15,66 @@
     box-sizing: border-box;
 }
 
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /*body*/
 body {
     background-color: var(--color-fondo);
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
     color: var(--color-texto);
-    max-width: 1100px;
-    margin: 0 auto;
+    /* max-width: 1100px; */
+    /* margin: 0 auto; */
     font-size: 16px;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+}
+
+/* inicio*/
+.inicio-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.inicio-contenido>div {
+    flex: 1 1 280px;
+}
+
+@media (max-width: 768px) {
+    .inicio-contenido {
+        flex-direction: column;
+    }
+
+    .contacto-contenido {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 /* Header */
 header {
     background-color: var(--color-primario);
     color: #ffffff;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+header img {
+    max-width: 900px;
 }
 
 /* Tipografía */
@@ -104,11 +145,6 @@ p {
 }
 
 /* Contenido */
-main {
-    padding: 20px;
-    margin: 0 auto;
-}
-
 article {
     margin-bottom: 20px;
     background-color: var(--color-secundario);
@@ -139,14 +175,8 @@ dt {
 }
 
 /* Flexbox */
-.servicios {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
 .servicio-item {
-    flex: 1 1 280px;
+    /* flex: 1 1 280px; */
     min-width: 0;
 }
 
@@ -184,7 +214,17 @@ dt {
     border-radius: 50%;
 }
 
-/* Formulario. Por ahora sin uso*/
+.contacto-contenido {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.contacto-contenido>div {
+    flex: 1;
+}
+
+/* Formulario*/
 input {
     padding: 0.5rem;
     border: 1px solid var(--color-secundario);
@@ -205,7 +245,7 @@ button {
 /* Imágenes */
 img {
     width: 100%;
-    max-width: 700px;
+    max-width: 1700px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -214,15 +254,15 @@ img {
 
 .imagen-atractivo {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: auto;
+    object-fit: initial;
     border-radius: 10px;
 }
 
-.imagen-vertical {
+/* .imagen-vertical {
     height: auto;
     object-fit: initial;
-}
+} */
 
 /* Footer */
 footer {
