@@ -27,10 +27,7 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
     color: var(--color-texto);
-    /* max-width: 1100px; */
-    /* margin: 0 auto; */
     font-size: 16px;
-    /* padding: 0 1rem; */
 }
 
 /* inicio*/
@@ -66,7 +63,6 @@ body {
 /* Header */
 header {
     background-color: var(--color-primario);
-    color: #ffffff;
     padding: 50px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -79,7 +75,7 @@ header img {
 
 /* Tipografía */
 h1 {
-    color: #ffffff;
+    color: var(--color-texto);
     font-family: Georgia, serif;
     font-size: 32px;
 }
@@ -176,7 +172,6 @@ dt {
 
 /* Flexbox */
 .servicio-item {
-    /* flex: 1 1 280px; */
     min-width: 0;
 }
 
@@ -259,15 +254,11 @@ img {
     border-radius: 10px;
 }
 
-/* .imagen-vertical {
-    height: auto;
-    object-fit: initial;
-} */
 
 /* Footer */
 footer {
     background-color: var(--color-primario);
-    color: #ffffff;
+    color: var(--color-texto);
     text-align: center;
     padding: 10px;
     width: 100%;
